@@ -1,0 +1,78 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <img src="https://img.freepik.com/premium-vector/basketball-club-logo-design-template_680400-66.jpg?w=2000" alt="A ball club logo">
+    <header class="Basketball-Open-League-Header">
+  <h1>Basketball Open League</h1>
+  <p><em> Want to join our open league? Fill out this form.</em></p>
+    </header>
+    <form action="/server/" method="get" class="speaker-form">
+    <div class="form-row">
+      <label for="Full-name">Name</label>
+      <input type="text" id="full-name" name="Full-name">
+      
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="joe@example.com">
+    </div>
+
+    <fieldset class="legacy-form-row">
+      <legend>Division</legend>
+
+      <input
+        id="division-type-1"
+        type="radio"
+        name="division-type"
+        value="Pro-division"
+      />
+      <label for="talk-type-1" class="radio-label">Pro-division</label>
+
+      <input
+        id="division-type-2"
+        type="radio"
+        name="division-type"
+        value="Semi-Pro-division"
+        checked
+      />
+      <label for="talk-type-2" class="radio-label">Semi-Pro division</label>
+    </fieldset>
+
+    <div class="form-row">
+      <label for="Jersey">Jersey Size</label>
+      <select name="t-shirt" id="t-shirt">
+        <option value="xs">Extra small</option>
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="L">Large</option>
+      </select>
+
+    </div>
+
+    <div class="form-row">
+      <label for="abstract">Abstract</label>
+      <textarea name="abstract" id="abstract"></textarea>
+      <p class="instructions">Comments?</p>
+    </div>
+
+    <div class="form-row">
+      <label for="available" class="checkbox-label">
+        <input type="checkbox" id="available" name="available" value="is-available">
+        <span>Are you ready to play ball?</span>
+      </label>
+    </div>
+
+    <div class="form-row">
+      <button>Submit</button>
+    </div>
+    </form>
+  </body>
+  </html>
